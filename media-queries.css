@@ -1,4 +1,21 @@
- body {
-     background: aliceblue;
+/*desktop */
+body {
+     background: white;
      color: black;
  }
+
+h1 {
+    font-family: sans-serif;
+
+}
+
+ul {
+    text-align: right;
+    list-style-type: none;
+    text-decoration: underline;
+    display: flex;
+    flex-direction: row-reverse;
+}
+#ul>li {
+    word-spacing: 2em;
+}
