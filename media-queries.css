@@ -1,33 +1,113 @@
-/*mobile*/
+/*MOBILE DESIGN*/
 
-@media screen and (min-width:500px) {
-    selector {
-        property:value;
+@media screen and (min-width:370px) and (max-width:650px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    h1 {
+        text-align: center;
+        width: 270px;
+        margin-bottom: 0;
+
+    }
+
+    h2 {
+        margin-bottom: .5em;
+    }
+
+    h2 > p {
+        margin-top: .5em;
+    }
+
+    .alert-info {
+        background: darkturquoise;
+        border: 1px solid lightgrey;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        display: flex;
+        margin: .5rem;
+        justify-content: center;
+        width: 95%;
+    }
+
+    .header-img {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .main {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-bottom: 2em;
+    }
+
+    .main > p {
+        margin-top: .5em;
+    }
+
+    .sub-section {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-bottom: 7em;
+        font-style: italic;
+    }
+
+    .nav {
+        display: flex;
+        height: unset;
+    }
+
+    ul {
+        flex-wrap: wrap;
+    }
+
+    li {
+        background-color: lightgrey;
+        padding: 1em;
+        margin: .5em;
+        text-align: center;
+        list-style-type: none;
     }
 }
 
-@media screen and (min-width:960px) and (max-width:1200px) {
+/*@media (max-width: 800px) {*/
+/*    .flex-container {*/
+/*        flex-direction: column;*/
+/*    }*/
+/*}*/
 
+.hidden-on-desktop {
+    /*display: none;*/
 }
 
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
+/*DESKTOP DESIGN*/
 
-
-
-
-
-
-
-
-
-/*desktop */
-body {
-     background: white;
-     color: black;
- }
+@media screen and (min-width:530px) and (max-width:650px)
 
 h1 {
     font-family: sans-serif;
+    margin-top: 0;
 
 }
 
@@ -36,8 +116,21 @@ ul {
     list-style-type: none;
     text-decoration: underline;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
+    align-self: flex-start;
+    justify-content: flex-end;
+    padding: 0;
+    flex-wrap: wrap;
 }
-#ul>li {
-    word-spacing: 2em;
+
+li {
+    padding: 1em;
 }
+
+.sub-section {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    font-style: italic;
+}
+
