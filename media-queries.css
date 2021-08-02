@@ -1,34 +1,12 @@
 /*MOBILE DESIGN*/
 
 @media all and (min-width:370px) and (max-width:850px) {
-
-
     body {
         display: flex;
         flex-direction: column;
         text-align: center;
         padding: 1.5em;
     }
-
-    p {
-        margin: 0;
-    }
-
-    h1 {
-        font-size: 3em;
-        padding-bottom: 2rem;
-    }
-
-    h2 {
-        padding-top: 1em;
-        margin-bottom: .5em;
-    }
-
-    h2 > p {
-        margin-bottom: .5em;
-
-    }
-
     .alert-info {
         background: lightcyan;
         text-decoration: none;
@@ -41,12 +19,28 @@
         justify-content: center;
         width: 100%;
     }
-
     .alert-info a {
         color: black;
         text-decoration: none;
         font-size: large;
     }
+    h1 {
+        font-size: 3em;
+        padding-bottom: 2rem;
+    }
+    h2 {
+        padding-top: 1em;
+        margin-bottom: .5em;
+    }
+    h2 > p {
+        margin-bottom: .5em;
+    }
+    p {
+        margin: 0;
+    }
+
+
+
 
     .header-img {
         display: flex;
@@ -107,10 +101,6 @@
         width: 100%
     }
 
-    #social-media-links {
-        /*padding-bottom: 3rem;*/
-    }
-
     #main {
         font-size: larger;
     }
@@ -118,6 +108,7 @@
     footer {
         margin-right: auto;
         margin-left: .5em;
+        width: 100%
 
     }
 }
@@ -154,7 +145,13 @@ h2 {
     font-family: "Comic Sans MS", serif;
 }
 
-/*DESKTOP*/
+#social-media-links {
+    padding-bottom: 3rem;
+    float: right;
+    margin-top: -16px;
+}
+
+/*DESKTOP DESIGN*/
 @media screen and (min-width:850px) and (max-width:1720px){
 
     * {
@@ -207,7 +204,7 @@ h2 {
     }
 
     footer > p {
-        margin-top: 300px;
+        margin-top: 700px;
     }
 
     .hidden-on-desktop {
@@ -215,7 +212,7 @@ h2 {
     }
 
     nav {
-        margin: 30px 20px 50px 20px;
+        margin: 56px 20px 50px 20px;
         display: inline;
         flex-basis: 0;
         float: right;
@@ -229,7 +226,6 @@ h2 {
     p {
         display: flex;
         flex-direction: column;
+        line-height: 1rem;
     }
-
-
 }
