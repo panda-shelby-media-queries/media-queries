@@ -31,12 +31,6 @@
         padding-top: 1em;
         margin-bottom: .5em;
     }
-    h2 > p {
-        margin-bottom: .5em;
-    }
-    p {
-        margin: 0;
-    }
     .nav-links {
         flex-direction: column;
         list-style: none;
@@ -169,7 +163,6 @@
         flex-direction: column;
         margin-top: 30px;
     }
-
     li {
         padding: 10px;
         display: inline;
@@ -180,4 +173,3 @@
         margin-top: 700px;
     }
 }
-/*END*/
